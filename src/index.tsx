@@ -1,6 +1,7 @@
+import { createServer } from 'miragejs';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createServer } from 'miragejs';
+
 import { App } from './App';
 
 createServer({
@@ -11,19 +12,19 @@ createServer({
       return [
         {
           id: 1,
-          title: "Desenvolvimento de Site",
-          type: "income",
+          title: 'Desenvolvimento de Site',
+          type: 'income',
           amount: 12000,
-          category: "Development"
-        }
-      ]
-    })
-  }
-})
+          category: 'Development',
+        },
+      ];
+    });
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

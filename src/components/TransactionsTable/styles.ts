@@ -3,11 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.main`
   margin-top: 4rem;
 
-  table{
+  table {
     width: 100%;
     border-spacing: 0 0.5rem;
 
-    th{
+    th {
       color: var(--text-body);
       font-weight: 400;
       padding: 1rem 2rem;
@@ -21,24 +21,24 @@ export const Container = styled.main`
       background: var(--shape);
       color: var(--text-body);
 
-      &.title{
-        color:var(--text-title);
+      &.title {
+        color: var(--text-title);
       }
 
-      &.income{
+      &.income {
         color: var(--green);
       }
 
-      &.expense{
-        color: var(--red)
+      &.expense {
+        color: var(--red);
       }
       &:first-of-type {
-        border-radius:var(--border-radius-value) 0 0 var(--border-radius-value);
+        border-radius: var(--border-radius-value) 0 0 var(--border-radius-value);
       }
 
       &:last-of-type {
         border-radius: 0 var(--border-radius-value) var(--border-radius-value) 0;
       }
-    } 
+    }
   }
 `;

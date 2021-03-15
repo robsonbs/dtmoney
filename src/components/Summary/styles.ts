@@ -2,24 +2,24 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: -8rem;
 
   div {
-    background   : var(--shape);
-    padding      : 1.5rem 2rem;
+    background: var(--shape);
+    padding: 1.5rem 2rem;
     border-radius: var(--border-radius-value);
     margin-bottom: 2rem;
-    color        : var(--text-title); 
-  
+    color: var(--text-title);
+
     header {
-      display        : flex;
-      align-items    : center;
+      display: flex;
+      align-items: center;
       justify-content: space-between;
     }
 
-    strong{
+    strong {
       display: block;
       margin-top: 1rem;
       font-size: 2rem;
@@ -29,10 +29,10 @@ export const Container = styled.div`
     }
     &.highlight-background {
       background: var(--green);
-      color     : var(--shape);
+      color: var(--shape);
     }
-    &.highlight-background.danger{
+    &.highlight-background.danger {
       background: var(--danger-color);
-    } 
+    }
   }
 `;
