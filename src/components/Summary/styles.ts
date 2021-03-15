@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:2rem;
-  margin-top:-8rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+  margin-top: -8rem;
 
   div {
     background   : var(--shape);
@@ -23,23 +23,16 @@ export const Container = styled.div`
       display: block;
       margin-top: 1rem;
       font-size: 2rem;
-      font-weight:500;
-      line-height:3rem;
+      font-weight: 500;
+      line-height: 3rem;
+      white-space: nowrap;
     }
-}
-
->div p {
-  font-size  : 2rem;
-  font-size  : 200;
-  line-height: 3rem;
-  margin-top : 1rem;
-  white-space: nowrap;
-}
->div.highlight-background {
-  background: var(--green);
-  color     : var(--shape);
-}
->div.highlight-background.danger{
-  background: var(--danger-color);
-}
+    &.highlight-background {
+      background: var(--green);
+      color     : var(--shape);
+    }
+    &.highlight-background.danger{
+      background: var(--danger-color);
+    } 
+  }
 `;
