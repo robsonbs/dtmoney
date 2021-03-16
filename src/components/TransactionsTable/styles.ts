@@ -29,7 +29,7 @@ export const Container = styled.main`
         color: var(--green);
       }
 
-      &.expense {
+      &.outcome {
         color: var(--red);
       }
       &:first-of-type {
