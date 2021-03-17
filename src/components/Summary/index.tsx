@@ -1,15 +1,15 @@
-import { useContext, useMemo } from 'react';
+import { useMemo } from 'react';
 
 import incomeImg from '../../assets/income.svg';
 import outcomeImg from '../../assets/outcome.svg';
 import totalImg from '../../assets/total.svg';
+import { useTransactions } from '../../hooks/useTransactions';
 import { formatAmount } from '../../utils/formatValues';
-import { TransactionContext } from '../TransactionsContext';
 
 import { Container } from './styles';
 
 export function Summary() {
-  const { transactions } = useContext(TransactionContext);
+  const { transactions } = useTransactions();
 
   const summary = useMemo(
     () =>
