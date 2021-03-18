@@ -34,7 +34,16 @@
         "depth": 25
       }
     ],
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "arrowParens": "always"
+      }
+    ],
+    "arrow-parens": [
+      "error",
+      "always"
+    ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [

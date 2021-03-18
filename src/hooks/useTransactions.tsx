@@ -36,7 +36,7 @@ export function TransactionsProvider({ children }: TransactionProviderProps) {
   useEffect(() => {
     api
       .get('/transactions')
-      .then(response => setTransactions(response.data.transactions));
+      .then((response) => setTransactions(response.data.transactions));
   }, []);
 
   async function createTransaction(transactionInput: TransactionInput) {
@@ -46,7 +46,7 @@ export function TransactionsProvider({ children }: TransactionProviderProps) {
     );
     const { transaction } = response.data;
 
-    setTransactions(oldState => [...oldState, transaction]);
+    setTransactions((oldState) => [...oldState, transaction]);
   }
   return (
     <TransactionContext.Provider value={{ transactions, createTransaction }}>

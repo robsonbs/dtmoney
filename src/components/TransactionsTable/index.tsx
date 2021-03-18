@@ -17,7 +17,7 @@ export function TransactionsTable() {
           </tr>
         </thead>
         <tbody>
-          {transactions.map(transaction => (
+          {transactions.map((transaction) => (
             <tr key={transaction.id}>
               <td className="title">{transaction.title}</td>
               <td className={transaction.type}>

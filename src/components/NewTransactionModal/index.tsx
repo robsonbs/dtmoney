@@ -62,13 +62,13 @@ export function NewTransactionModal({
           type="text"
           placeholder="Título"
           value={title}
-          onChange={e => setTitle(e.target.value)}
+          onChange={(e) => setTitle(e.target.value)}
         />
         <input
           type="number"
           placeholder="Valor"
           value={amount}
-          onChange={e => setAmount(Number(e.target.value))}
+          onChange={(e) => setAmount(Number(e.target.value))}
         />
         <TransactionTypeContainer>
           <RadioBox
@@ -96,7 +96,7 @@ export function NewTransactionModal({
           type="text"
           placeholder="Categoria"
           value={category}
-          onChange={e => setCategory(e.target.value)}
+          onChange={(e) => setCategory(e.target.value)}
         />
         <button type="submit">Cadastrar</button>
       </Container>
